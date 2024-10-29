@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="number-systems-conversion">
+        <div id="title">
+            Zamiana na systemy liczbowe
+        </div>
+        <form id="conversions">
+            <div id="options">
+                Liczba:
+                <select id="options-from">
+                    <option>Binary</option>
+                    <option>Four</option>
+                    <option>Octal</option>
+                    <option>Decimal</option>
+                    <option>Hexadecimal</option>
+                </select>
+                Rezultat:
+                <select id="options-to">
+                    <option>Binary</option>
+                    <option>Four</option>
+                    <option>Octal</option>
+                    <option>Decimal</option>
+                    <option>Hexadecimal</option>
+                </select>
+            </div>
+            <div id="input-and-result">
+                <p>Liczba: </p><input type="text" id="number-to-conv-1">
+                <p>Rezultat:</p> <input type="text" id="result-1" disabled
+                    style="background-color: rgb(229, 231, 231);">
+            </div>
+            <div id="button1">
+                <button id="submit1" type="submit">Konwertuj</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="division">
+        <div id="title">
+            Dzielenie z resztą
+        </div>
+        <div id="input-and-result" style="margin-top: 35px;">
+            <p>Dzielna: </p><input type="number" id="number-to-div-1">
+            <p>Dzielnik:</p> <input type="number" id="number-to-div-2">
+        </div>
+        <div id="button1">
+            <button id="submit2" type="submit">Podziel z resztą</button>
+        </div>
+    </div>
+
+    <div id="zm-code">
+        <div id="title">
+            Kod zm
+        </div>
+        <form id="conversions">
+            <div id="options">
+                <select id="options-from-zm" disabled> 
+                    <option>Decimal</option>
+                    <option>ZM</option>
+                </select>
+                <button id="switch">
+                    ⮀
+                </button>
+                <select id="options-to-zm" disabled>
+                    <option>ZM</option>
+                    <option>Decimal</option>
+                </select>
+            </div>
+            <div id="input-and-result">
+                <input type="text" id="number-to-conv-2">
+                <input type="text" id="result-2" disabled
+                    style="background-color: rgb(229, 231, 231);">
+            </div>
+            <div id="button1">
+                <button id="submit3" type="submit">Konwertuj</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="u1-code">
+        <div id="title">
+            kod u1 (8 bit)
+        </div>
+        <form id="conversions">
+            <div id="options">
+                <select id="options-from-u1" disabled> 
+                    <option>Decimal</option>
+                    <option>U1</option>
+                </select>
+                <button id="switch2">
+                    ⮀
+                </button>
+                <select id="options-to-u1" disabled>
+                    <option>U1</option>
+                    <option>Decimal</option>
+                </select>
+            </div>
+            <div id="input-and-result">
+                <input type="text" id="number-to-conv-3">
+                <input type="text" id="result-3" disabled
+                    style="background-color: rgb(229, 231, 231);">
+            </div>
+            <div id="button1">
+                <button id="submit4" type="submit">Konwertuj</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="u2-code">
+        <div id="title">
+            kod u2 (8 bit)
+        </div>
+        <form id="conversions">
+            <div id="options">
+                <select id="options-from-u2" disabled> 
+                    <option>Decimal</option>
+                    <option>U2</option>
+                </select>
+                <button id="switch3">
+                    ⮀
+                </button>
+                <select id="options-to-u2" disabled>
+                    <option>U2</option>
+                    <option>Decimal</option>
+                </select>
+            </div>
+            <div id="input-and-result">
+                <input type="text" id="number-to-conv-4">
+                <input type="text" id="result-4" disabled
+                    style="background-color: rgb(229, 231, 231);">
+            </div>
+            <div id="button1">
+                <button id="submit5" type="submit">Konwertuj</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="./script.js"></script>

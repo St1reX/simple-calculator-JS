@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  .name {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #333;
+  }
+  #meantime-result {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px;
+
+    border: none;
+    background-color: #252525;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+    font-size: 16px;
+
+    overflow: auto;
+    word-wrap: break-word;
+
+    width: 150px;
+    height: 80px;
+  }
+
+  #calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+  }
+  
+  #calculator-screen {
+    width: 100%;
+    font-size: 4rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 150px;
+  }
+  
+  button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+  }
+  
+  button:hover {
+    background-color: #eaeaea;
+  }
+  
+  #operator {
+    color: #337cac;
+  }
+  
+  #all-clear {
+    background-color: #c52227;
+    border-color: #9b1015;
+    color: #fff;
+  }
+  
+  #all-clear:hover {
+    background-color: #9b1015;
+  }
+  
+  #equal-sign {
+    background-color: #0cc944;
+    border-color: #0bb33d;
+    color: #fff;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+  }
+  
+  #equal-sign:hover {
+    background-color: #0bb33d;
+  }
+  
+  #calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
